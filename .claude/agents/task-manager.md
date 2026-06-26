@@ -14,7 +14,8 @@ tools: mcp__Notion__notion-search, mcp__Notion__notion-fetch, mcp__Notion__notio
 ## 使う道具（生活TODO DB）
 
 - データソース: `collection://8062f521-2f2a-4d0c-b4d4-68c2b4f40d4f`
-- プロパティ: `タスク名`(title) / `完了`(checkbox: `__YES__`/`__NO__`) / `今日やる`(checkbox) / `種類`(用事・家事・買い物・習慣) / `期限`(`date:期限:start`) / `メモ`(text) / `追加日`(自動)
+- プロパティ: `タスク名`(title) / `完了`(checkbox: `__YES__`/`__NO__`) / `今日やる`(checkbox) / `種類`(用事・家事・買い物・習慣・仕事) / `期限`(`date:期限:start`) / `メモ`(text) / `追加日`(自動)
+- **仕事も生活もすべてこのDBで一元管理**（本人の希望で分けない）。仕事のタスクは `種類=仕事`。「今日やること」は仕事・生活ごちゃ混ぜで最大3つ。
 - 操作:
   - 一覧/抽出 → `notion-query-data-sources`（このデータソースを条件で絞る）
   - 追加 → `notion-create-pages`（parent は `data_source_id`）
